@@ -1,25 +1,75 @@
-# JS-02
+# TS-01
 
 Помните, мы с вами делали анкету?
 
-Возьмите этот код и создайте одну из страниц, используя JS, как мы попробовали это на практике!
+Возьмите этот код и добавьте в проект **TypeScript**!
 
-Вот примерная структура, которая должна быть создана:
+## Что нужно сделать
+
+1. Инициализировать проект через npm:
+
+   ```bash
+   npm init
+   ```
+
+2. Установить `typescript` с помощью npm:
+
+   ```bash
+   npm install --save-dev typescript
+   ```
+
+3. Инициализировать конфиг TypeScript:
+
+   ```bash
+   npx tsc --init
+   ```
+
+4. Настроить `tsconfig.json`. Найдите в интернете рекомендованный конфиг или попросите нейросеть сгенерировать его под наш проект (не забудьте про пути `src`, `outDir`, `rootDir` и режим модулей).
+
+5. Перевести все компоненты в `.ts`.
+
+6. Создать файл типов `shared/lib/components/types.ts`.
+
+7. Описать в нём **дженерик-тип компонента** с опциональным `children`.
+
+8. Типизировать всё, что можно: пропсы компонентов, параметры функций, возвращаемые значения.
+
+9. Добавить в `package.json` скрипты для компиляции и разработки (сборка и dev-режим):
+
+   ```json
+   {
+     "scripts": {
+       "build": "tsc",
+       "dev": "tsc --watch"
+     }
+   }
+   ```
+
+10. Скомпилировать TypeScript, заново подключить собранный JS к HTML и проверить результат в браузере.
+
+## Требования к структуре
 
 ```text
 src/
   pages/
   widgets/
-  App.js
-  index.js
+  shared/
+    lib/
+      components/
+        types.ts
+  App.ts
+  index.ts
 ```
 
-- Если вы будете переделывать свой проект, то PR нужно сделать в ветку `task/JS-02`.
-- Если вы хотите взять мой проект, то берите ветку `task/JS-02-demo` и делайте туда PR.
+## Работа с репозиторием
+
+- Если вы переделываете свой проект, PR нужно сделать в ветку `task/TS-01`.
+- Если вы хотите взять мой проект, берите ветку `task/TS-01-demo` и делайте PR туда.
 
 Подробнее про то, как мы работаем с репозиториями, — в [README.md](README.md).
 
 ## Ресурсы
 
-- [Поиск элементов в DOM](https://learn.javascript.ru/searching-elements-dom)
-- [Изменение документа](https://learn.javascript.ru/modifying-document)
+- [TypeScript: документация](https://www.typescriptlang.org/docs/)
+- [TypeScript: tsconfig reference](https://www.typescriptlang.org/tsconfig)
+- [Дженерики в TypeScript](https://www.typescriptlang.org/docs/handbook/2/generics.html)
