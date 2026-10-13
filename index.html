@@ -5,81 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pit Lane — анкета болельщика Формулы-1</title>
   <meta name="description" content="Главная страница анкеты болельщика Формулы-1: заявка в фан-клуб, команды и правила.">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="http://172.30.82.99:3000/assets/favicon.svg">
+  <link rel="stylesheet" href="http://172.30.82.99:3000/public/styles.css">
+  <script type="module" src="http://172.30.82.99:3000/src/index.js" defer></script>
 </head>
 <body>
-  <div class="phone">
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Pit Lane — на главную">
-        <img class="brand__logo" src="assets/logo.svg" alt="Логотип Pit Lane F1 Fan Club">
-      </a>
-      <span class="header__badge">F1 Fan Club</span>
-    </header>
-
-    <nav class="site-nav" aria-label="Основная навигация">
-      <a class="site-nav__link" href="index.html" aria-current="page">Главная</a>
-      <a class="site-nav__link" href="profile.html">Профиль</a>
-    </nav>
-
-    <main class="content">
-      <section class="hero" aria-labelledby="hero-title">
-        <img class="hero__img" src="assets/hero.svg" alt="Болид Формулы-1 на трассе">
-        <div class="hero__body">
-          <h1 class="hero__title" id="hero-title">Стань частью <span>Pit Lane</span></h1>
-          <p class="hero__text">Анкета болельщика Формулы-1: расскажи о своей команде, пилоте и любви к гонкам.</p>
-          <div class="btn-row">
-            <a class="btn btn--ghost" href="profile.html">Мой профиль</a> 
-          </div>
-        </div>
-      </section>
-
-      <section aria-labelledby="teams-title">
-        <h2 class="section-title" id="teams-title">Команды сезона</h2>
-        <div class="team-grid" role="list">
-          <div class="team-chip team-chip--red" role="listitem">
-            <span class="team-chip__stripe" aria-hidden="true"></span>
-            Ferrari
-          </div>
-          <div class="team-chip team-chip--orange" role="listitem">
-            <span class="team-chip__stripe" aria-hidden="true"></span>
-            Red Bull
-          </div>
-          <div class="team-chip team-chip--silver" role="listitem">
-            <span class="team-chip__stripe" aria-hidden="true"></span>
-            Mercedes
-          </div>
-          <div class="team-chip team-chip--papaya" role="listitem">
-            <span class="team-chip__stripe" aria-hidden="true"></span>
-            McLaren
-          </div>
-          <div class="team-chip team-chip--green" role="listitem">
-            <span class="team-chip__stripe" aria-hidden="true"></span>
-            Aston Martin
-          </div>
-          <div class="team-chip team-chip--blue" role="listitem">
-            <span class="team-chip__stripe" aria-hidden="true"></span>
-            Alpine
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="site-footer__top">
-        <img class="site-footer__logo" src="assets/logo.svg" alt="Логотип Pit Lane F1 Fan Club">
-      </div>
-      <nav class="site-footer__nav" aria-label="Навигация в подвале">
-        <a href="index.html">Главная</a>
-        <a href="profile.html">Профиль</a>
-      </nav>
-      <div class="site-footer__contacts">
-        <span>Связь с клубом:</span>
-        <a href="mailto:pitlane@f1fan.example">pitlane@f1fan.example</a>
-        <span>Краснодар · паддок у экрана</span>
-      </div>
-      <p class="site-footer__copy">&copy; 2026 Pit Lane F1 Fan Club</p>
-    </footer>
+  <div class="phone" id="app">
   </div>
 </body>
 </html>
