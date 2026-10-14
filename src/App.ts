@@ -1,10 +1,10 @@
-import CatViewer from "./widgets/CatViewer/CatViewer.js";
+import ContentViewer from "./widgets/ContentViewer/ContentViewer.js";
 
 const App = (): string => {
   return `
     <main class="app">
-      <h1 class="app__title">Котики</h1>
-      ${CatViewer()}
+      <h1 class="app__title">Галерея</h1>
+      ${ContentViewer()}
     </main>
   `;
 };
