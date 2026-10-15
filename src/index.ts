@@ -1,3 +1,4 @@
+import "../public/styles.css";
 import App from "./App.js";
 
 const setupIpViewer = (root: HTMLElement): void => {
