@@ -1,10 +1,10 @@
-import ContentViewer from "./widgets/ContentViewer/ContentViewer.js";
+import IpViewer from "./widgets/IpViewer/IpViewer.js";
 
 const App = (): string => {
   return `
     <main class="app">
-      <h1 class="app__title">Галерея</h1>
-      ${ContentViewer()}
+      <h1 class="app__title">Мой IP</h1>
+      ${IpViewer()}
     </main>
   `;
 };
