@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pure CSS Theme &amp; Custom Checkboxes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <input type="checkbox" id="theme" class="theme-toggle" />
+
+  <div class="page">
+    <label for="theme" class="theme-switch" aria-label="Toggle dark theme"></label>
+
+    <main class="card">
+      <h1>Settings</h1>
+      <p class="lead">Choose your settings</p>
+
+      <form class="form">
+        <label class="custom-checkbox">
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+          <span>Enable notifications</span>
+        </label>
+
+        <label class="custom-checkbox">
+          <input type="checkbox" checked />
+          <span class="checkmark"></span>
+          <span>Receive newsletter</span>
+        </label>
+
+        <label class="custom-checkbox">
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+          <span>Share anonymous usage data</span>
+        </label>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

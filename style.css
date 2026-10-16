@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #eef1f7;
+}
+
+.theme-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 20px 64px;
+  background: #eef1f7;
+  color: #1b1f2a;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 32px;
+  margin-bottom: 40px;
+  border-radius: 999px;
+  background: #d7dce6;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-switch::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+#theme:checked ~ .page .theme-switch {
+  background: #4f6ef7;
+}
+
+#theme:checked ~ .page .theme-switch::before {
+  transform: translateX(26px);
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 32px;
+  border: 1px solid #d7dce6;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(20, 30, 60, 0.12);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.lead {
+  margin: 0 0 24px;
+  color: #5b6473;
+  line-height: 1.5;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.checkmark {
+  position: relative;
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #d7dce6;
+  border-radius: 6px;
+  background: #ffffff;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    outline-color 0.2s ease;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) scale(0);
+  transition: transform 0.2s ease;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background: #4f6ef7;
+  border-color: #4f6ef7;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  transform: rotate(45deg) scale(1);
+}
+
+.custom-checkbox input:focus-visible + .checkmark {
+  outline: 3px solid #4f6ef7;
+  outline-offset: 3px;
+}
