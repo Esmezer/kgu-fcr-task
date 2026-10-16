@@ -1,4 +1,4 @@
-# skfu-mcr-task
+# kgu-fcr-task
 
 Учебный репозиторий с заданиями. Здесь описано, как сделать форк, настроить окружение и получать обновления заданий от преподавателя.
 
@@ -49,8 +49,8 @@ ssh -T git@github.com
 ### 6. Переключить ремоуты на SSH
 
 ```bash
-git remote set-url origin git@github.com:{ВАШ_ЛОГИН}/skfu-mcr-task.git
-git remote set-url upstream git@github.com:MisaSup/skfu-mcr-task.git
+git remote set-url origin git@github.com:{ВАШ_ЛОГИН}/kgu-fcr-task.git
+git remote set-url upstream git@github.com:MisaSup/kgu-fcr-task.git
 ```
 
 Проверка:
@@ -62,7 +62,7 @@ git remote -v
 > После настройки SSH клонируйте форк по SSH-адресу:
 >
 > ```bash
-> git clone git@github.com:{ВАШ_ЛОГИН}/skfu-mcr-task.git
+> git clone git@github.com:{ВАШ_ЛОГИН}/kgu-fcr-task.git
 > ```
 >
 > Если SSH по каким-то причинам недоступен, можно продолжить работать по HTTPS, но тогда для пуша понадобится [токен доступа](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
@@ -71,19 +71,19 @@ git remote -v
 
 ### 1. Сделать форк репозитория
 
-Откройте <https://github.com/MisaSup/skfu-mcr-task> и нажмите **Fork**.
+Откройте <https://github.com/MisaSup/kgu-fcr-task> и нажмите **Fork**.
 
 У вас появится собственная копия репозитория — это `origin` (ваш форк).
 
 ### 2. Клонировать свой форк
 
 ```bash
-git clone https://github.com/{ВАШ_ЛОГИН}/skfu-mcr-task.git
+git clone https://github.com/{ВАШ_ЛОГИН}/kgu-fcr-task.git
 
 ИЛИ по ssh
-git clone git@github.com:{ВАШ_ЛОГИН}/skfu-mcr-task.git
+git clone git@github.com:{ВАШ_ЛОГИН}/kgu-fcr-task.git
 
-cd skfu-mcr-task
+cd kgu-fcr-task
 ```
 
 ### 3. Добавить репозиторий преподавателя как `upstream`
@@ -91,7 +91,7 @@ cd skfu-mcr-task
 Это нужно, чтобы получать обновления заданий. `origin` — ваш форк, `upstream` — репозиторий преподавателя.
 
 ```bash
-git remote add upstream https://github.com/MisaSup/skfu-mcr-task.git
+git remote add upstream https://github.com/MisaSup/kgu-fcr-task.git
 ```
 
 Проверка, что ремоуты настроены правильно:
@@ -103,10 +103,10 @@ git remote -v
 Ожидаемый результат:
 
 ```
-origin    https://github.com/{ВАШ_ЛОГИН}/skfu-mcr-task.git (fetch)
-origin    https://github.com/{ВАШ_ЛОГИН}/skfu-mcr-task.git (push)
-upstream  https://github.com/MisaSup/skfu-mcr-task.git (fetch)
-upstream  https://github.com/MisaSup/skfu-mcr-task.git (push)
+origin    https://github.com/{ВАШ_ЛОГИН}/kgu-fcr-task.git (fetch)
+origin    https://github.com/{ВАШ_ЛОГИН}/kgu-fcr-task.git (push)
+upstream  https://github.com/MisaSup/kgu-fcr-task.git (fetch)
+upstream  https://github.com/MisaSup/kgu-fcr-task.git (push)
 ```
 
 ## Как получать обновления от преподавателя
