@@ -1,1 +1,1 @@
-# skfu-mcr-task
+# kgu-fcr-task
