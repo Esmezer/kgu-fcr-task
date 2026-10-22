@@ -1,0 +1,16 @@
+{
+  "name": "kgu-fcr-task-ts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Учебный репозиторий с заданиями по TypeScript",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=24.21.0"
+  }
+}
