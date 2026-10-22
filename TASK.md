@@ -32,3 +32,7 @@
 - Классы должны точно совпадать с теми, что используются в `style.css`.
 - У картинки обязателен атрибут `alt`.
 - JavaScript не используется.
+
+## Ресурсы
+
+- [Презентации](https://drive.google.com/drive/folders/1dQFBPJ4BL9fk2z7Z02mZG_nGh5jGCPN0?usp=sharing)
