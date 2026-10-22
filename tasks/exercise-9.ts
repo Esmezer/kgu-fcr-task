@@ -2,50 +2,58 @@
 
 Intro:
 
-    Our attempt to Open Source didn't work quite as
-    expected. It turned out there were already many
-    existing functional JS libraries.
-
-    All the remaining developers left the company as
-    well. It seems that they are joining a very
-    ambitious startup which re-invented a juicer and
-    raised millions of dollars.
-    Too bad we cannot compete with this kind of
-    financing even though we believe our idea is
-    great.
-
-    It's time to shine for the last time and publish
-    our new invention: object-constructor as our CTO
-    named it. A small library which helps
-    manipulating an object.
+    Our object-constructor library never took off.
+    We are going back to the basics: writing actual classes.
+    We already describe data with interfaces — now let's
+    implement a class that follows an interface contract
+    and hides its internals with access modifiers.
 
 Exercise:
 
-    Here is a library which helps manipulating objects.
-    We tried to write type annotations and we failed.
-    Please help!
+    Implement the class Person so that it implements IPerson:
+
+      - private firstName: string;
+      - private lastName: string;
+      - protected birthDate: Date;
+      - constructor(firstName: string, lastName: string, birthDate: Date);
+      - public getFullName(): string — returns `${firstName} ${lastName}`.
+
+    Access modifiers matter:
+      - firstName / lastName must be private;
+      - birthDate must be protected (accessible in subclasses).
 
 */
 
-export class ObjectManipulator {
+export interface IPerson {
+    getFullName(): string;
+}
 
-    constructor(protected obj) {}
+export class Person implements IPerson {
+    // TODO: add fields, constructor and getFullName()
+}
 
-    public set(key, value) {
-        return new ObjectManipulator({...this.obj, [key]: value});
+const person = new Person('Max', 'Mustermann', new Date(1990, 0, 1));
+console.log(person.getFullName());
+
+
+// @ts-expect-error firstName is private and cannot be accessed from outside
+console.log(person.firstName);
+
+// @ts-expect-error birthDate is protected and cannot be accessed from outside
+console.log(person.birthDate);
+
+class Employee extends Person {
+    public getBirthYear(): number {
+        return this.birthDate.getFullYear();
     }
 
-    public get(key) {
-        return this.obj[key];
-    }
-
-    public delete(key) {
-        const newObj = {...this.obj};
-        delete newObj[key];
-        return new ObjectManipulator(newObj);
-    }
-
-    public getObject() {
-        return this.obj;
+    public getFirstName(): string {
+        // @ts-expect-error firstName is private and cannot be accessed in a subclass
+        return this.firstName;
     }
 }
+
+// In case you are stuck:
+// https://www.typescriptlang.org/docs/handbook/2/classes.html#implements-clauses
+// https://www.typescriptlang.org/docs/handbook/2/classes.html#member-visibility
+// https://www.typescriptlang.org/docs/handbook/2/classes.html

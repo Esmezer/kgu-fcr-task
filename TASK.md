@@ -2,7 +2,7 @@
 
 Продолжаем знакомиться с **TypeScript**. На этот раз — через набор небольших упражнений на типизацию.
 
-Задания взяты из открытого сборника [TypeScript Exercises](https://typescript-exercises.github.io/#exercise=1&file=%2Findex.ts).
+Упражнения 1–8 взяты из открытого сборника [TypeScript Exercises](https://typescript-exercises.github.io/#exercise=1&file=%2Findex.ts). Упражнение 9 — авторское задание по классам и модификаторам доступа.
 
 ## Что нужно сделать
 
@@ -18,7 +18,7 @@
 | [`exercise-6.ts`](./tasks/exercise-6.ts) | Дженерики и кортежи |
 | [`exercise-7.ts`](./tasks/exercise-7.ts) | Пересечение типов (intersection) |
 | [`exercise-8.ts`](./tasks/exercise-8.ts) | Дженерики в API-ответах |
-| [`exercise-9.ts`](./tasks/exercise-9.ts) | Типизация класса и его методов |
+| [`exercise-9.ts`](./tasks/exercise-9.ts) | Классы, интерфейсы и модификаторы доступа |
 
 В каждом файле в комментарии есть блоки **Intro** и **Exercise** с описанием задачи. В коде специально оставлены ошибки типов (`unknown`, неявный `any`, отсутствующие типы) — ваша задача их исправить.
 
@@ -77,3 +77,4 @@ npm run typecheck > result.log
 - [Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)
 - [Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)
 - [Utility Types](https://www.typescriptlang.org/docs/handbook/utility-types.html)
+- [Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html)
