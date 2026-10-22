@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Учебный репозиторий с заданиями по JS",
+  "description": "Учебный репозиторий с заданиями по JS: работа с датами",
   "scripts": {
     "test": "node --test",
-    "test:required": "node --test ./__test__/required.test.js",
-    "test:optional": "node --test ./__test__/optional.test.js",
-    "test:example": "node --test ./__test__/example.test.js",
+    "test:timeago": "node --test ./__test__/timeAgo.test.js",
+    "test:countdown": "node --test ./__test__/countdown.test.js",
+    "test:format": "node --test ./__test__/formatDate.test.js",
     "test:tap": "node --test --test-reporter=tap"
   },
   "engines": {
