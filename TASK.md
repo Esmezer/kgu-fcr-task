@@ -38,6 +38,10 @@ nvm install 24.21.0
 - Используйте только встроенный объект `Date` и стандартные методы JavaScript.
 - Никаких сторонних библиотек (moment, date-fns и т.п.).
 
+## Ресурсы
+
+- [Дата и время — learn.javascript.ru](https://learn.javascript.ru/date) — теория и примеры работы с `Date`.
+
 ## Запуск тестов
 
 ```bash
