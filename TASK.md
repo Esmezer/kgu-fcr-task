@@ -52,6 +52,7 @@ background: var(--bg);
 
 ## Ресурсы
 
+- [Презентации](https://drive.google.com/drive/folders/1dQFBPJ4BL9fk2z7Z02mZG_nGh5jGCPN0?usp=sharing)
 - [https://doka.guide/css/custom-properties/](https://doka.guide/css/custom-properties/)
 - [https://doka.guide/css/checked/](https://doka.guide/css/checked/)
 - [https://learn.javascript.ru/css-selectors](https://learn.javascript.ru/css-selectors)
